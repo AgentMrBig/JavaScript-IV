@@ -25,7 +25,7 @@ class Person{
     }
 }
 
-class Instructor extends Person{
+class Instructors extends Person{
     constructor(attrs){
         super(attrs);
         this.specialty = attrs.specialty;
@@ -40,4 +40,24 @@ class Instructor extends Person{
     }
 }
 
+class Student extends Person{
+    constructor(attrs){
+        super(attrs);
+        this.previousBackground = attrs.previousBackground;
+        this.className = attrs.className;
+        this. favSubjects = attrs.favSubjects;
+    }
+    listsSubjects(){
+        console.log(`===== Favorite Subjects =====`);
+        this.favSubjects.forEach((item, index, arr) => {
+            console.log(this.favSubjects[index]);
+        });
+    }
+    PRAssignmnent(subject){
+        return `${this.name} has submitted a PR for ${subject}`;
+    }
+    sprintChallenge(subject){
+        return `${this.name} has begun sprint challenge on ${subject}`;
+    }
+}
 
