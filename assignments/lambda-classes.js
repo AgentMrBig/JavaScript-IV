@@ -61,3 +61,27 @@ class Student extends Person{
     }
 }
 
+class ProjectManager extends Instructors{
+    constructor(attrs){
+        super(attrs)
+        this.gradClassName = attrs.gradClassName;
+        this.favInstructor = attrs.favInstructor;
+    }
+    standUp(channel){
+        return `${this.name} announces to ${channel}, @${channel}`;
+    };
+    dubugsCode(student, subject){
+        return `${student.name} debugs {student.name}'s code on ${subject}`;
+    }
+}
+
+// class CharacterStats extends GameObject{
+//     constructor(attrs){
+//         super(attrs);
+//         this.healthPoints = attrs.healthPoints;
+//     }
+//     takeDamage(){
+//         return `${this.name} took damage.`;
+//     }
+// }
+
