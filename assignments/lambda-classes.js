@@ -39,13 +39,5 @@ class Instructor extends Person{
         return `${student.name} receives a perfect score on ${subject}`;
     }
 }
-// class CharacterStats extends GameObject{
-//     constructor(attrs){
-//         super(attrs);
-//         this.healthPoints = attrs.healthPoints;
-//     }
-//     takeDamage(){
-//         return `${this.name} took damage.`;
-//     }
-// }
+
 
