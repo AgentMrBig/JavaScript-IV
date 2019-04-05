@@ -75,13 +75,4 @@ class ProjectManager extends Instructors{
     }
 }
 
-// class CharacterStats extends GameObject{
-//     constructor(attrs){
-//         super(attrs);
-//         this.healthPoints = attrs.healthPoints;
-//     }
-//     takeDamage(){
-//         return `${this.name} took damage.`;
-//     }
-// }
 
